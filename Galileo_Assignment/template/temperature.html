@@ -1,0 +1,18 @@
+
+	<md-tabs md-selected="SelectedIndex" md-theme="cyan">
+      <md-tab ng-click="record('morning',0)">
+        Morning
+      </md-tab>
+      <md-tab ng-click="record('noon',1)">
+        Afternoon
+      </md-tab>
+	<md-tab ng-click="record('evening',2)">
+        evening
+      </md-tab>
+	<md-tab ng-click="record('night',3)">
+        night 
+      </md-tab>
+    </md-tabs>
+<h1>{{Home.ChartTitle}}</h1>
+<canvas id="temperature"></canvas>
+

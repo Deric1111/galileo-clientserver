@@ -1,0 +1,1 @@
+create view location_analysis as select avg(temp) as avgtemp, loc_name, location.loc_id as loc_id from temperature inner join time on time.time_id=temperature.time_id left join day on time.day_id=day.day_id left join location on temperature.loc_id=location.loc_id group by temperature.loc_id;
